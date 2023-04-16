@@ -24,14 +24,6 @@ export const heroes = [
         'characters': 'Jay Garrick, Barry Allen, Wally West, Bart Allen'
     },
     {
-        'id': 'dc-green',
-        'superhero': 'Green Lantern',
-        'publisher': 'DC Comics',
-        'alter_ego': 'Alan Scott',
-        'first_appearance': 'All-American Comics #16',
-        'characters': 'Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz'
-    },
-    {
         'id': 'dc-arrow',
         'superhero': 'Green Arrow',
         'publisher': 'DC Comics',
@@ -78,6 +70,14 @@ export const heroes = [
         'alter_ego': 'Dinah Drake',
         'first_appearance': 'Flash Comics #86',
         'characters': 'Dinah Drake, Dinah Lance'
+    },
+    {
+        'id': 'dc-green',
+        'superhero': 'Green Lantern',
+        'publisher': 'DC Comics',
+        'alter_ego': 'Alan Scott',
+        'first_appearance': 'All-American Comics #16',
+        'characters': 'Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz'
     },
     {
         'id': 'marvel-spider',
