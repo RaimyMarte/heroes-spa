@@ -63,6 +63,7 @@ export const Navbar = () => {
                         <NavLink
                             className='nav-item nav-link'
                             id='logoutButton'
+                            aria-label='logoutButton'
                             onClick={onLogout}
                         >
                         Logout

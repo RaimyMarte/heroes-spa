@@ -16,8 +16,8 @@ export const SearchPage = () => {
   const showError = (q.length > 0) && heroes.length === 0
 
 
-  const { searchText, onInputChange, onResetForm } = useForm({
-    searchText: ''
+  const { searchText, onInputChange } = useForm({
+    searchText: q
   })
 
 
@@ -25,7 +25,6 @@ export const SearchPage = () => {
     event.preventDefault()
     navigate(`?q=${searchText}`)
 
-    onResetForm()
   }
 
 
@@ -47,6 +46,7 @@ export const SearchPage = () => {
               className="form-control"
               name="searchText"
               autoComplete="off"
+              value={ searchText }
               onChange={onInputChange}
             />
 
@@ -73,12 +73,14 @@ export const SearchPage = () => {
           } */}
 
           <div className="alert alert-primary animate__animated animate__fadeIn"
+          aria-label="primaryAlert"
             style={{ display: showSearch ? '' : 'none' }}
           >
             Search a hero
           </div>
 
           <div className="alert alert-danger animate__animated animate__fadeIn"
+          aria-label="dangerAlert"
             style={{ display: showError ? '' : 'none' }}
           >
             No hero with <b>{q}</b>
