@@ -24,7 +24,6 @@ export const SearchPage = () => {
   const onSearchSubmit = event => {
     event.preventDefault()
     navigate(`?q=${searchText}`)
-
   }
 
 
@@ -39,7 +38,7 @@ export const SearchPage = () => {
           <h4>Searching</h4>
           <hr />
 
-          <form onSubmit={onSearchSubmit}>
+          <form onSubmit={onSearchSubmit} role="form">
             <input
               type="text"
               placeholder="Search a hero"
